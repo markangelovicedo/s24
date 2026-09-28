@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&family=Syne:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-error-container":"#ffdad6","outline-variant":"#534434","secondary-fixed":"#ffdf9f","on-secondary-fixed-variant":"#5c4300","surface-container-lowest":"#060e20","surface-container-high":"#222a3d","inverse-on-surface":"#283044","on-tertiary":"#003824","surface-bright":"#31394d","on-primary-fixed":"#2a1700","on-tertiary-container":"#004e34","inverse-surface":"#dae2fd","secondary":"#ffc640","primary":"#ffc174","tertiary-container":"#30c88f","on-primary":"#472a00","on-tertiary-fixed-variant":"#005236","on-primary-container":"#613b00","error-container":"#93000a","on-error":"#690005","on-secondary-fixed":"#261a00","inverse-primary":"#855300","on-tertiary-fixed":"#002113","primary-fixed":"#ffddb8","tertiary":"#56e5a9","on-secondary":"#402d00","on-primary-fixed-variant":"#653e00","primary-container":"#f59e0b","surface":"#0b1326","outline":"#a08e7a","tertiary-fixed-dim":"#4edea3","surface-container-highest":"#2d3449","on-surface-variant":"#d8c3ad","background":"#0b1326","secondary-container":"#e3aa00","secondary-fixed-dim":"#f9bd22","surface-variant":"#2d3449","on-secondary-container":"#5a4100","on-surface":"#dae2fd","surface-container":"#171f33","surface-dim":"#0b1326","primary-fixed-dim":"#ffb95f","surface-container-low":"#131b2e","tertiary-fixed":"#6ffbbe","on-background":"#dae2fd","error":"#ffb4ab","surface-tint":"#ffb95f"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"gutter-mobile":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","margin-mobile":"1.25rem","space-xl":"2.5rem",margin:"3rem",gutter:"1.5rem","space-lg":"1.5rem","space-md":"1rem"},fontFamily:{"display-hero":["Syne"],"headline-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Syne"],caption:["Plus Jakarta Sans"],"label-tag":["JetBrains Mono"],"display-hero-mobile":["Syne"],"body-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Syne"],"headline-lg":["Syne"],"label-code":["JetBrains Mono"],"body-md":["Plus Jakarta Sans"]},fontSize:{"display-hero":["64px",{lineHeight:"72px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"700"}],caption:["12px",{lineHeight:"16px",fontWeight:"500"}],"label-tag":["12px",{lineHeight:"16px",letterSpacing:"0.05em",fontWeight:"600"}],"display-hero-mobile":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"800"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-code":["13px",{lineHeight:"18px",letterSpacing:"0.02em",fontWeight:"500"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="DevCraft Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W29i4UiqrWZSda1SA6vqQC0mDSDhYhVYBbk6VPvBjrSsDQxteybhdXlT5u9B6PdvuPo-iNOszo0DObgAsxU5Ciju6pkuNWir9HjYtEwL-HcaqELvIOSkKiRNPEVXrr11XfiYok9pKaULVhRQu-fPomrD_IE1N5FGnFjkN_2CbfMHxIL7RBMuBNUecW1htj2PsCtSXLTRI5WJXJSAdiq2LKszRKgL1PgztnCgX-emBf22UYGtDKdPwP-_8"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">DevCraft</span></div><nav class="hidden md:flex items-center gap-space-xs bg-surface-container-lowest/60 p-space-xs rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg"><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="portfolio-overview" href="#hero">Home</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="projects-showcase" href="#projects">Projects</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="skills-matrix" href="#skills">Tools & Skills</a><a class="px-space-md py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors rounded-lg" data-path="contact-inquiry" href="#contact">Contact</a></nav><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="font-label-tag text-label-tag text-on-surface-variant uppercase">Available for Work</span></div><a class="flex items-center gap-space-sm px-space-md py-space-xs rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-bold shadow-[0_1px_8px_rgba(0,0,0,0.04)] hover:bg-secondary-fixed-dim hover:text-on-secondary transition-all" href="#contact"><span class="font-body-sm text-body-sm font-semibold">Get in Touch</span></a></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full text-on-surface">
+<!-- ==================== LANDING / HERO SECTION ==================== -->
+<section class="relative w-full overflow-hidden py-space-xl lg:py-24" id="hero">
+<!-- Ambient luminous background accent circles -->
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-primary/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+<div class="absolute -top-10 right-10 w-72 h-72 bg-tertiary/5 rounded-full blur-[90px] pointer-events-none -z-10"></div>
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column: Copy & CTAs -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-lg">
+<!-- Availability Tag -->
+<div class="inline-flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container shadow-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span>
+</span>
+<span class="font-label-tag text-label-tag text-on-surface uppercase tracking-wider">Available for Q2/Q3 Contracts & Roles</span>
+</div>
+<!-- Bold Headline -->
+<div class="flex flex-col gap-space-sm">
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight">
+              Frontend <span class="text-primary">Creative Technologist</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+              Architecting high-concurrency web systems and fluid interactive experiences. Bridging the divide between rigorous systems engineering and boutique visual polish.
+            </p>
+</div>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
+<a class="w-full sm:w-auto text-center px-space-xl py-space-md rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-body-md font-bold shadow-xl hover:bg-secondary-fixed hover:text-on-secondary transition-all transform hover:-translate-y-0.5" href="#projects">
+              Explore Featured Work ↓
+            </a>
+<a class="w-full sm:w-auto text-center px-space-lg py-space-md rounded-xl bg-surface-container-high text-on-surface font-headline-sm text-body-md font-semibold hover:bg-surface-bright transition-all shadow-sm" href="#contact">
+              Let's Talk
+            </a>
+</div>
+<!-- Live Engineering Badges -->
+<div class="grid grid-cols-3 gap-space-md w-full pt-space-md">
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<span class="font-headline-md text-headline-md text-primary font-bold">1</span>
+<span class="font-label-tag text-label-tag text-on-surface-variant uppercase">Year Exp.</span>
+</div>
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<span class="font-headline-md text-headline-md text-tertiary font-bold">90+</span>
+<span class="font-label-tag text-label-tag text-on-surface-variant uppercase">Sessions</span>
+</div>
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<span class="font-headline-md text-headline-md text-secondary font-bold">99.9%</span>
+<span class="font-label-tag text-label-tag text-on-surface-variant uppercase">Uptime Mindset</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Developer Visual Card & Code Snippet -->
+<div class="lg:col-span-5 relative w-full flex flex-col items-center">
+<div class="relative w-full max-w-[420px] rounded-xl overflow-hidden bg-surface-container-high p-space-sm shadow-xl">
+<!-- Terminal Header Bar -->
+<div class="flex items-center justify-between px-space-sm py-space-xs mb-space-xs bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+<span class="font-label-code text-caption text-on-surface-variant"> </span>
+<span class="material-symbols-outlined text-caption text-on-surface-variant">terminal</span>
+</div>
+<!-- Developer Portrait -->
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-lowest">
+<img class="terminal-photo" src="images/mark-v.png" alt="Mark V, Full Stack Web Developer"></div>
+<!-- Floating Pill Status -->
+<div class="absolute bottom-space-md left-space-md right-space-md p-space-sm rounded-lg bg-surface-container-lowest/80 backdrop-blur-md shadow-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-code text-label-code text-on-surface">Mark V // Frontend Dev</span>
+</div>
+<span class="font-label-tag text-caption text-primary uppercase"></span>
+</div>
+</div>
+<!-- Code Snippet Box Overlay -->
+<div class="mt-space-sm p-space-md rounded-lg bg-surface-container-lowest font-label-code text-label-code text-on-surface-variant leading-relaxed">
+<div class="flex items-center justify-between text-caption pb-space-xs mb-space-xs text-outline">
+<span>METADATA</span>
+<span>UTF-8</span>
+</div>
+<p><span class="text-secondary font-semibold">const</span> dev = {</p>
+<p class="pl-space-md">name: <span class="text-tertiary">'Mark V'</span>,</p>
+<p class="pl-space-md">role: <span class="text-tertiary">'Frontend Developer'</span>,</p>
+<p class="pl-space-md">focus: [<span class="text-primary">'CSS'</span>, <span class="text-primary">'Next.js'</span>, <span class="text-primary">'Boostsrap'</span>]</p>
+<p>};</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== FEATURED STATS & TECH MARQUEE ==================== -->
+<section class="w-full bg-surface-container-lowest py-space-lg shadow-sm">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="material-symbols-outlined text-primary text-headline-sm">memory</span>
+<span class="font-label-tag text-label-tag uppercase text-on-surface tracking-wider">Tools
+</span>
+</div>
+<div class="flex flex-wrap items-center justify-center md:justify-end gap-space-xs sm:gap-space-sm w-full">
+<span class="px-space-md py-space-xs rounded-full bg-surface-container font-label-tag text-label-tag text-on-surface shadow-sm">TypeScript</span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container font-label-tag text-label-tag text-on-surface shadow-sm">Next.js 15</span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container font-label-tag text-label-tag text-on-surface shadow-sm">React 19</span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container font-label-tag text-label-tag text-on-surface shadow-sm">Node.js</span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container font-label-tag text-label-tag text-on-surface shadow-sm">GraphQL</span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container font-label-tag text-label-tag text-on-surface shadow-sm">PostgreSQL</span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container font-label-tag text-label-tag text-on-surface shadow-sm">Tailwind CSS</span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container font-label-tag text-label-tag text-primary font-bold shadow-sm">WebGL / Three.js</span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container font-label-tag text-label-tag text-on-surface shadow-sm">Docker</span>
+<span class="px-space-md py-space-xs rounded-full bg-surface-container font-label-tag text-label-tag text-on-surface shadow-sm">AWS</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== PROJECTS SHOWCASE SECTION ==================== -->
+<section class="w-full py-space-xl lg:py-24" id="projects">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="font-label-code text-caption font-bold">[ 01 // PORTFOLIO ARCHIVE ]</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Capstone 1
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Combinations on HTML, CSS, and Boostsrap learned from the past 23 Sessions.
+          </p>
+</div>
+<!-- Filter Controls -->
+<div class="flex flex-wrap items-center gap-space-xs p-space-xs rounded-xl bg-surface-container-low shadow-sm">
+<button class="px-space-md py-space-xs rounded-lg font-label-tag text-label-tag bg-primary-container text-on-primary-container font-bold shadow-sm transition-all" type="button">All (4)</button>
+<button class="px-space-md py-space-xs rounded-lg font-label-tag text-label-tag text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" type="button">Full-Stack</button>
+<button class="px-space-md py-space-xs rounded-lg font-label-tag text-label-tag text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" type="button">Frontend & UI</button>
+<button class="px-space-md py-space-xs rounded-lg font-label-tag text-label-tag text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" type="button">Open Source</button>
+</div>
+</div>
+<!-- Projects Grid (4 In-Depth Showcase Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Project 1: NexusFlow -->
+<article class="flex flex-col justify-between rounded-xl bg-surface-container-low p-space-lg shadow-xl hover:bg-surface-container transition-all group">
+<div class="flex flex-col gap-space-md">
+<!-- Window Top Bar -->
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-code text-label-code text-primary font-bold">Project Planning</span>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-tag text-caption text-on-surface-variant uppercase">Planning</span>
+</div>
+</div>
+
+<!-- Title & Description -->
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Planning
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+               Plan the website design.
+Choose colors, fonts, images, and content.
+Decide the website sections.
+              </p>
+</div>
+<!-- Key Metrics Strip -->
+<div class="grid grid-cols-2 gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest">
+<div class="flex flex-col">
+<span class="font-label-code text-caption text-outline"></span>
+<span class="font-headline-sm text-body-md text-on-surface font-bold"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-code text-caption text-outline"></span>
+<span class="font-headline-sm text-body-md text-tertiary font-bold"></span>
+</div>
+</div>
+<!-- Tech Pills -->
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest font-label-tag text-caption text-on-surface">Design</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest font-label-tag text-caption text-on-surface">Sections</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest font-label-tag text-caption text-on-surface">Colors</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest font-label-tag text-caption text-on-surface">Content</span>
+</div>
+</div>
+<!-- Action Links -->
+<div class="flex items-center justify-between pt-space-lg mt-space-sm">
+<a class="flex items-center gap-space-xs font-label-code text-label-code text-primary hover:text-secondary-fixed transition-colors" href="#contact">
+<span>[ View Planning ]</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</a>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-headline-sm">code</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-headline-sm">open_in_new</span>
+</div>
+</div>
+</article>
+<!-- Project 2: Aetheria -->
+<article class="flex flex-col justify-between rounded-xl bg-surface-container-low p-space-lg shadow-xl hover:bg-surface-container transition-all group">
+<div class="flex flex-col gap-space-md">
+<!-- Window Top Bar -->
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-code text-label-code text-primary font-bold">HTML</span>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-tag text-caption text-on-surface-variant uppercase">Website Structure</span>
+</div>
+</div>
+<!-- Project Mockup Graphic Canvas -->
+<div class="relative w-full h-56 rounded-lg overflow-hidden bg-surface-container-lowest flex flex-col justify-between p-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-code text-caption text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-caption text-primary"></span> 
+                </span>
+<span class="px-space-sm py-0.5 rounded font-label-code text-caption bg-surface-container text-secondary font-bold"></span>
+</div>
+
+<!-- Title & Description -->
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                HTML
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Create the website structure.
+Add Navbar, Home, About, Skills, Projects, Services, Contact, and Footer
+              </p>
+</div>
+<!-- Key Metrics Strip -->
+<div class="grid grid-cols-2 gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest">
+<div class="flex flex-col">
+<span class="font-label-code text-caption text-outline"></span>
+<span class="font-headline-sm text-body-md text-secondary font-bold"> </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-code text-caption text-outline"></span>
+<span class="font-headline-sm text-body-md text-tertiary font-bold"> </span>
+</div>
+</div>
+<!-- Tech Pills -->
+<div class="flex flex-wrap gap-space-xs">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest font-label-tag text-caption text-on-surface">Navbar</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest font-label-tag text-caption text-on-surface">About</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest font-label-tag text-caption text-on-surface">Projects </span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-highest font-label-tag text-caption text-on-surface">Footer</span>
+</div>
+</div>
+<!-- Action Links -->
+<div class="flex items-center justify-between pt-space-lg mt-space-sm">
+<a class="flex items-center gap-space-xs font-label-code text-label-code text-primary hover:text-secondary-fixed transition-colors" href="#contact">
+<span>[ View Structure ]</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</a>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-headline-sm">code</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-headline-sm">open_in_new</span>
+</div>
+</div>
+</article>
+<!-- Project 3: VaultPay -->
+<article class="flex flex-col justify-between rounded-xl bg-surface-container-low p-space-lg shadow-xl hover:bg-surface-container transition-all group">
+<div class="flex flex-col gap-space-md">
+<!-- Window Top Bar -->
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-code text-label-code text-primary font-bold">Bootstrap & CSS</span>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-tag text-caption text-on-surface-variant uppercase"></span>
+</div>
+</div>
+
+<!-- Title & Description -->
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Bootstrap & CSS
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Use Bootstrap for responsive layout and components. 
+Use CSS for colors, fonts, spacing, and custom design
+              </p>
+</div>
+
+</div>
+<!-- Action Links -->
+<div class="flex items-center justify-between pt-space-lg mt-space-sm">
+<a class="flex items-center gap-space-xs font-label-code text-label-code text-primary hover:text-secondary-fixed transition-colors" href="#contact">
+<span>[ View Bootstrap and CSS ]</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</a>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-headline-sm">code</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-headline-sm">open_in_new</span>
+</div>
+</div>
+</article>
+<!-- Project 4: DevPulse -->
+<article class="flex flex-col justify-between rounded-xl bg-surface-container-low p-space-lg shadow-xl hover:bg-surface-container transition-all group">
+<div class="flex flex-col gap-space-md">
+<!-- Window Top Bar -->
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-code text-label-code text-primary font-bold">Testing & Deployment</span>
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-tag text-caption text-on-surface-variant uppercase"> </span>
+</div>
+</div>
+
+<!-- Title & Description -->
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+                Testing & Deployment
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Test on desktop, tablet, and mobile.
+Fix errors and improve the design.
+Upload the project to GitHub.
+Deploy the website.
+              </p>
+</div>
+
+<!-- Action Links -->
+<div class="flex items-center justify-between pt-space-lg mt-space-sm">
+<a class="flex items-center gap-space-xs font-label-code text-label-code text-primary hover:text-secondary-fixed transition-colors" href="#contact">
+<span>[ View Testing and deployment ]</span>
+<span class="material-symbols-outlined text-body-sm">arrow_forward</span>
+</a>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-headline-sm">code</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-on-surface cursor-pointer text-headline-sm">open_in_new</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- ==================== TOOLS & SKILLS SECTION ==================== -->
+<section class="w-full bg-surface-container-lowest py-space-xl lg:py-24" id="skills">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="font-label-code text-caption font-bold">[ 02 // TECHNICAL ARSENAL ]</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Tools, frameworks & methodologies
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          A disciplined stack developed over 7+ years of building web applications, real-time graphics, and cloud-native backends.
+        </p>
+</div>
+<!-- Skills Matrix: 4 Categorized Modules -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Pillar 1: Frontend & UI Engineering -->
+<div class="flex flex-col gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="p-space-xs rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-headline-sm">devices</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Frontend & UI</h3>
+</div>
+<ul class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">React 19 / Next.js 15</span>
+<span class="font-label-code text-caption text-primary">98%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">TypeScript (Strict)</span>
+<span class="font-label-code text-caption text-primary">96%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">WebGL / Three.js</span>
+<span class="font-label-code text-caption text-secondary">88%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">Tailwind CSS / UI Systems</span>
+<span class="font-label-code text-caption text-tertiary">99%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">WCAG 2.1 AAA a11y</span>
+<span class="font-label-code text-caption text-tertiary">92%</span>
+</li>
+</ul>
+</div>
+<!-- Pillar 2: Backend & Distributed Cloud -->
+<div class="flex flex-col gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="p-space-xs rounded-lg bg-surface-container text-tertiary">
+<span class="material-symbols-outlined text-headline-sm">cloud_sync</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Backend & Cloud</h3>
+</div>
+<ul class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">Node.js / Express / Bun</span>
+<span class="font-label-code text-caption text-tertiary">94%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">PostgreSQL / Prisma / Redis</span>
+<span class="font-label-code text-caption text-tertiary">90%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">Go (Golang Microservices)</span>
+<span class="font-label-code text-caption text-secondary">82%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">GraphQL & RESTful APIs</span>
+<span class="font-label-code text-caption text-primary">95%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">AWS / Docker / Kubernetes</span>
+<span class="font-label-code text-caption text-on-surface-variant">86%</span>
+</li>
+</ul>
+</div>
+<!-- Pillar 3: Architecture & DevEx -->
+<div class="flex flex-col gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="p-space-xs rounded-lg bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-headline-sm">terminal</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">DevEx & Architecture</h3>
+</div>
+<ul class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">CI/CD & GitHub Actions</span>
+<span class="font-label-code text-caption text-secondary">92%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">Vitest / Jest / Playwright</span>
+<span class="font-label-code text-caption text-primary">90%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">Lighthouse 100s Profiling</span>
+<span class="font-label-code text-caption text-tertiary">97%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">Vite / Turborepo / Monorepos</span>
+<span class="font-label-code text-caption text-primary">94%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">Microfrontends & Federation</span>
+<span class="font-label-code text-caption text-on-surface-variant">85%</span>
+</li>
+</ul>
+</div>
+<!-- Pillar 4: Design Systems & Creative -->
+<div class="flex flex-col gap-space-md p-space-lg rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="p-space-xs rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-headline-sm">palette</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Design & Creative</h3>
+</div>
+<ul class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">Figma-to-Code Mastery</span>
+<span class="font-label-code text-caption text-tertiary">99%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">Design Tokens Architecture</span>
+<span class="font-label-code text-caption text-primary">96%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">Framer Motion & GSAP</span>
+<span class="font-label-code text-caption text-secondary">92%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">Responsive Spatial Logic</span>
+<span class="font-label-code text-caption text-tertiary">98%</span>
+</li>
+<li class="flex items-center justify-between p-space-xs rounded bg-surface-container-lowest">
+<span class="text-on-surface">Micro-interactions</span>
+<span class="font-label-code text-caption text-primary">95%</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== EXPERIENCE & PROCESS HIGHLIGHTS ==================== -->
+<section class="w-full py-space-xl lg:py-24">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="font-label-code text-caption font-bold">[ 03 // TRAJECTORY & PROCESS ]</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          How I collaborate & deliver value
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="font-headline-md text-headline-md text-primary font-bold">01</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Architectural Discovery</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Deconstructing requirements into modular domains, identifying edge bottlenecks early, and setting benchmark performance thresholds before touching code.
+          </p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="font-headline-md text-headline-md text-secondary font-bold">02</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Iterative Sprint Execution</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Shipping functional vertical slices weekly. High visibility via automated staging builds, continuous profiling, and automated test suites.
+          </p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="font-headline-md text-headline-md text-tertiary font-bold">03</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Production Hardening</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Fine-tuning core web vitals, zero-latency caching strategies, comprehensive documentation, and empowering the client team for maintainability.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== CONTACT SECTION ==================== -->
+<section class="w-full bg-surface-container-lowest py-space-xl lg:py-24" id="contact">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left Column: Inquiry Information -->
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-lg">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="font-label-code text-caption font-bold">[ 04 // INITIALIZE CONTACT ]</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+              Have a project in mind? Let's build together.
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Currently accepting selective freelance contracts, strategic frontend consulting, and technical advisory roles for late 2024 / early 2025.
+            </p>
+<div class="flex flex-col gap-space-sm pt-space-sm">
+<div class="flex items-center gap-space-md p-space-sm rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-primary text-headline-sm">mail</span>
+<div class="flex flex-col">
+<span class="font-label-tag text-caption text-outline">DIRECT EMAIL</span>
+<a class="font-label-code text-body-sm text-on-surface hover:text-primary transition-colors" href="mailto:alex.rivera@devcraft.io">markv@email.com</a>
+</div>
+</div>
+<div class="flex items-center gap-space-md p-space-sm rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-tertiary text-headline-sm">schedule</span>
+<div class="flex flex-col">
+<span class="font-label-tag text-caption text-outline">RESPONSE SLA</span>
+<span class="font-body-sm text-body-sm text-on-surface">Typically responds within 24 hours</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md p-space-sm rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-secondary text-headline-sm">public</span>
+<div class="flex flex-col">
+<span class="font-label-tag text-caption text-outline">TIMEZONE & RELOCATION</span>
+<span class="font-body-sm text-body-sm text-on-surface">EST (UTC-5) / Remote Worldwide</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Social Quick Links -->
+<div class="flex flex-col gap-space-xs pt-space-md">
+<span class="font-label-tag text-caption text-outline uppercase tracking-wider">Social Channels & Profiles</span>
+<div class="flex flex-wrap items-center gap-space-sm">
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container font-label-code text-caption text-on-surface hover:bg-surface-container-high transition-colors" href="https://github.com" rel="noopener" target="_blank">GitHub</a>
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container font-label-code text-caption text-on-surface hover:bg-surface-container-high transition-colors" href="https://linkedin.com" rel="noopener" target="_blank">LinkedIn</a>
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container font-label-code text-caption text-on-surface hover:bg-surface-container-high transition-colors" href="https://x.com" rel="noopener" target="_blank">Twitter/X</a>
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container font-label-code text-caption text-on-surface hover:bg-surface-container-high transition-colors" href="https://read.cv" rel="noopener" target="_blank">ReadCV</a>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Dispatch Form -->
+<div class="lg:col-span-7">
+<div class="p-space-lg sm:p-space-xl rounded-xl bg-surface-container-low shadow-xl">
+<form class="flex flex-col gap-space-md" id="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-status').classList.remove('hidden');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-tag text-label-tag uppercase text-on-surface-variant" for="name">Your Name *</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" id="name" placeholder="Elena Rostova" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-tag text-label-tag uppercase text-on-surface-variant" for="email">Email Address *</label>
+<input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" id="email" placeholder="elena@company.com" required="" type="email"/>
+</div>
+</div>
+<!-- Project Type Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-tag text-label-tag uppercase text-on-surface-variant">Project Scope / Engagement</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="project_scope" type="radio" value="webapp"/>
+<div class="p-space-xs rounded-lg bg-surface-container text-center font-label-code text-caption text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:font-bold transition-all">
+                      Web App
+                    </div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="project_scope" type="radio" value="design_system"/>
+<div class="p-space-xs rounded-lg bg-surface-container text-center font-label-code text-caption text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:font-bold transition-all">
+                      Design System
+                    </div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="project_scope" type="radio" value="architecture"/>
+<div class="p-space-xs rounded-lg bg-surface-container text-center font-label-code text-caption text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:font-bold transition-all">
+                      Architecture
+                    </div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="project_scope" type="radio" value="fulltime"/>
+<div class="p-space-xs rounded-lg bg-surface-container text-center font-label-code text-caption text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:font-bold transition-all">
+                      Full-time
+                    </div>
+</label>
+</div>
+</div>
+<!-- Budget Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-tag text-label-tag uppercase text-on-surface-variant" for="budget">Estimated Budget (USD)</label>
+<select class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="budget">
+<option value="tier1">< $10,000</option>
+<option selected="" value="tier2">$10,000 – $25,000</option>
+<option value="tier3">$25,000 – $50,000</option>
+<option value="tier4">$50,000+</option>
+<option value="fulltime">Full-time compensation package</option>
+</select>
+</div>
+<!-- Message Textarea -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-tag text-label-tag uppercase text-on-surface-variant" for="message">Project Details / Message *</label>
+<textarea class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" id="message" placeholder="Tell me about the goals, timelines, and technical requirements..." required="" rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs text-caption font-label-code text-outline">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>SSL encrypted packet dispatch</span>
+</div>
+<button class="px-space-xl py-space-md rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-body-md font-bold hover:bg-secondary-fixed hover:text-on-secondary transition-all shadow-xl" type="submit">
+                  Send Message →
+                </button>
+</div>
+<!-- Success Notification Alert -->
+<div class="hidden p-space-md rounded-lg bg-tertiary/20 text-tertiary font-label-code text-caption flex items-center gap-space-sm" id="form-status">
+<span class="material-symbols-outlined text-headline-sm">check_circle</span>
+<span>Transmission acknowledged! Alex will review your brief within 24 hours.</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-gutter py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-sm"><span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span><span class="font-label-tag text-label-tag text-on-surface uppercase">Open to new opportunities</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 DevCraft. Architected with high-precision engineering.</p></div><div class="flex items-center gap-space-md"><a class="px-space-md py-space-xs rounded-lg font-label-code text-label-code text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="https://github.com" rel="noopener" target="_blank">[ GitHub ]</a><a class="px-space-md py-space-xs rounded-lg font-label-code text-label-code text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="https://linkedin.com" rel="noopener" target="_blank">[ LinkedIn ]</a><a class="px-space-md py-space-xs rounded-lg font-label-code text-label-code text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="https://x.com" rel="noopener" target="_blank">[ Twitter/X ]</a><a class="px-space-md py-space-xs rounded-lg font-label-code text-label-code text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="https://discord.com" rel="noopener" target="_blank">[ Discord ]</a></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#hero"><span class="material-symbols-outlined text-body-md">arrow_upward</span><span class="font-label-tag text-label-tag uppercase">Back to Top</span></a></div></div></footer></body></html>
